@@ -1,0 +1,89 @@
+name: Track weekend fares
+
+on:
+  schedule:
+    - cron: "43 12,23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: weekend
+  cancel-in-progress: false
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      run_id: ${{ steps.id.outputs.run_id }}
+    steps:
+      - id: id
+        run: echo "run_id=$(date -u +'%Y-%m-%dT%H:%MZ')" >> "$GITHUB_OUTPUT"
+
+  track:
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    env:
+      RUN_ID: ${{ needs.setup.outputs.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Check fares (shard ${{ matrix.shard }} of 4)
+        run: python tracker.py --shard ${{ matrix.shard }} --of 4 --out out/shard-${{ matrix.shard }}.csv
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shard-${{ matrix.shard }}
+          path: out/
+          retention-days: 2
+          if-no-files-found: ignore
+
+  publish:
+    needs: track
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: out
+          merge-multiple: true
+      - name: Merge results
+        run: python merge.py out
+      - name: Build report and map
+        id: report
+        run: python analyze.py
+      - name: Save results
+        run: |
+          git config user.name  "flight-bot"
+          git config user.email "flight-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Weekend fares $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase --quiet
+          git push
+      - name: Email new deals
+        if: steps.report.outputs.alert == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🔥 New weekend deals from ORD ($(date +'%b %d'))" \
+            --body-file alert.md

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekend Fares from ORD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f5f2; --surface:#fcfcfb; --surface-2:#f0efeb; --line:#e4e3df;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#8a8984;
+  --accent:#2a78d6;
+  --seq-0:#e3edf9; --seq-1:#b7d0f0; --seq-2:#7eaae3; --seq-3:#3f84d9; --seq-4:#1d5aa6;
+  --seq-ink-dark:#ffffff; --seq-ink-light:#0b0b0b;
+  --div-cool:#2a78d6; --div-mid:#e9e8e4; --div-warm:#eb6834;
+  --none:#ecebe7;
+  --good:#0f7b3e;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#121211; --surface:#1a1a19; --surface-2:#232322; --line:#2e2e2c;
+    --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+    --accent:#3987e5;
+    --seq-0:#1f2b3a; --seq-1:#23426b; --seq-2:#2b5d9c; --seq-3:#3987e5; --seq-4:#8bb8f2;
+    --seq-ink-dark:#0b0b0b; --seq-ink-light:#ffffff;
+    --div-cool:#3987e5; --div-mid:#2c2c2a; --div-warm:#d95926;
+    --none:#222221; --good:#4cc27e;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211; --surface:#1a1a19; --surface-2:#232322; --line:#2e2e2c;
+  --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#8f8e86;
+  --accent:#3987e5;
+  --seq-0:#1f2b3a; --seq-1:#23426b; --seq-2:#2b5d9c; --seq-3:#3987e5; --seq-4:#8bb8f2;
+  --seq-ink-dark:#0b0b0b; --seq-ink-light:#ffffff;
+  --div-cool:#3987e5; --div-mid:#2c2c2a; --div-warm:#d95926;
+  --none:#222221; --good:#4cc27e;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 64px}
+header h1{font-size:26px;letter-spacing:-.02em;margin:0 0 4px;font-weight:700}
+header p{margin:0;color:var(--ink-2)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:20px 0 8px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+.chip:hover{border-color:var(--ink-3)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip small{opacity:.7;margin-left:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:16px 0 24px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.stat .k{color:var(--ink-3);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.stat .v{font-size:26px;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.stat .s{color:var(--ink-2);font-size:13px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:20px}
+.card h2{font-size:16px;margin:0 0 4px;font-weight:600}
+.card .sub{color:var(--ink-2);font-size:13px;margin:0 0 16px}
+.map{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;max-width:820px;margin:0 auto}
+.tile{min-width:0;overflow:hidden;aspect-ratio:1;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;border:2px solid transparent;transition:transform .08s}
+.tile:hover{transform:scale(1.06);border-color:var(--ink)}
+.tile.sel{border-color:var(--ink)}
+.tile b{font-size:12px;font-weight:600}
+.tile span{font-size:11px;font-variant-numeric:tabular-nums;opacity:.9}
+.tile.none{background:var(--none);color:var(--ink-3);cursor:default}
+.tile.none:hover{transform:none;border-color:transparent}
+.legend{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:14px;color:var(--ink-2);font-size:12px}
+.legend i{display:inline-block;width:26px;height:10px;border-radius:3px}
+.deals{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.deal{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface-2)}
+.deal .c{font-weight:600}
+.deal .p{font-size:22px;font-weight:700;letter-spacing:-.02em}
+.deal .o{color:var(--good);font-weight:600;font-size:13px}
+.deal .m{color:var(--ink-2);font-size:12px}
+.empty{color:var(--ink-3);font-size:13px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.tools input{flex:1;min-width:180px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:10px;padding:8px 12px;font:inherit}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th{font-size:12px;color:var(--ink-3);font-weight:500;text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+th.num,td.num{text-align:right}
+th[aria-sort]::after{content:" ↓";color:var(--ink-2)}
+th[aria-sort="ascending"]::after{content:" ↑"}
+td{padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+tr:hover td{background:var(--surface-2)}
+td .code{color:var(--ink-3);font-size:12px;margin-left:4px}
+.neg{color:var(--good);font-weight:600}
+.pos{color:var(--ink-2)}
+.spark{display:block}
+.heat{display:grid;gap:2px;font-size:12px;min-width:640px}
+.heat .h{color:var(--ink-3);text-align:center;padding:4px 0;font-size:11px}
+.heat .n{padding:4px 8px 4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.heat .c{border-radius:4px;text-align:center;padding:5px 0;font-variant-numeric:tabular-nums;cursor:default}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.4;max-width:260px;opacity:0;transition:opacity .1s;z-index:10}
+footer{color:var(--ink-3);font-size:12px;margin-top:24px}
+@media (max-width:640px){.tile b{font-size:10px}.tile span{font-size:9px}.map{gap:3px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Weekend fares from Chicago</h1>
+    <p id="sub"></p>
+  </header>
+
+  <div class="chips" id="chips" role="group" aria-label="Weekend"></div>
+
+  <div class="stats" id="stats"></div>
+
+  <section class="card">
+    <h2>Cheapest round trip by state</h2>
+    <p class="sub" id="mapsub">Cheapest United fare to any tracked airport in each state. Tap a state to filter the table.</p>
+    <div class="map" id="map"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section class="card">
+    <h2>Deals</h2>
+    <p class="sub">Fares at least <span id="thr"></span> below that city's own typical price.</p>
+    <div class="deals" id="deals"></div>
+  </section>
+
+  <section class="card">
+    <h2>All destinations</h2>
+    <p class="sub">Click a column to sort. Trend shows the cheapest available fare at each check.</p>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search city, state or airport code…" aria-label="Search">
+      <button class="chip" id="clear" hidden>Clear state filter</button>
+    </div>
+    <div class="tablewrap"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Every weekend, every city</h2>
+    <p class="sub">Each cell is that weekend's fare, compared with the city's typical fare for a weekend. <span style="color:var(--div-cool);font-weight:600">Blue</span> = cheaper than the city's typical price, <span style="color:var(--div-warm);font-weight:600">orange</span> = pricier.</p>
+    <div class="tablewrap"><div class="heat" id="heat"></div></div>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+const GRID = {AK:[0,0],ME:[11,0],VT:[10,1],NH:[11,1],WA:[1,2],ID:[2,2],MT:[3,2],ND:[4,2],MN:[5,2],IL:[6,2],WI:[7,2],MI:[8,2],NY:[9,2],RI:[10,2],MA:[11,2],
+OR:[1,3],NV:[2,3],WY:[3,3],SD:[4,3],IA:[5,3],IN:[6,3],OH:[7,3],PA:[8,3],NJ:[9,3],CT:[10,3],
+CA:[1,4],UT:[2,4],CO:[3,4],NE:[4,4],MO:[5,4],KY:[6,4],WV:[7,4],VA:[8,4],MD:[9,4],DE:[10,4],
+AZ:[2,5],NM:[3,5],KS:[4,5],AR:[5,5],TN:[6,5],NC:[7,5],SC:[8,5],DC:[9,5],
+OK:[4,6],LA:[5,6],MS:[6,6],AL:[7,6],GA:[8,6],HI:[1,7],TX:[4,7],FL:[9,7]};
+
+const $ = s => document.querySelector(s);
+const money = v => v == null ? "—" : "$" + Math.round(v).toLocaleString();
+const wk = d => {  /* weekend key (Thursday) → "Oct 8–11" */
+  const a = new Date(d + "T12:00:00"), b = new Date(a); b.setDate(a.getDate() + 3);
+  const m = x => x.toLocaleDateString("en-US",{month:"short"});
+  return m(a) === m(b) ? `${m(a)} ${a.getDate()}–${b.getDate()}` : `${m(a)} ${a.getDate()}–${m(b)} ${b.getDate()}`;
+};
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const pctTxt = x => { const r = Math.round(x * 100); return (r < 0 ? "−" : "+") + Math.abs(r) + "%"; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let weekend = "any", stateFilter = null, sortKey = "price", sortAsc = true;
+
+function priceFor(d){
+  if (weekend === "any") return d.now == null ? null : {p:d.now, s:d.now_stops, w:d.best_wk, f:d.now_flight};
+  const g = d.grid[weekend]; return g ? {p:g.p, s:g.s, w:weekend, f:g.f} : null;
+}
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(e, html){ tip.innerHTML = html; tip.style.opacity = 1; moveTip(e); }
+function moveTip(e){
+  const x = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8);
+  const y = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8);
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip(){ tip.style.opacity = 0; }
+
+/* ---------- header + chips ---------- */
+function renderHeader(){
+  $("#sub").textContent = `United · regular Economy · ${DATA.trip} · updated ${DATA.updated} (Chicago)`;
+  $("#thr").textContent = Math.round(DATA.deal_threshold * 100) + "%";
+  const chips = $("#chips");
+  const opts = [["any","Any weekend"], ...DATA.weekends.map(d => [d, wk(d)])];
+  chips.innerHTML = opts.map(([v,l]) => {
+    const r = DATA.weekend_rel[v];
+    const hint = (r != null && DATA.n_runs >= 2) ? `<small>${pctTxt(r-1)}</small>` : "";
+    return `<button class="chip" data-w="${v}" aria-pressed="${v===weekend}">${l}${hint}</button>`;
+  }).join("");
+  chips.onclick = e => { const b = e.target.closest("[data-w]"); if (!b) return; weekend = b.dataset.w; renderAll(); };
+}
+
+function renderStats(){
+  const rows = DATA.dests.map(d => ({d, x: priceFor(d)})).filter(r => r.x);
+  rows.sort((a,b) => a.x.p - b.x.p);
+  const best = rows[0];
+  const under = rows.filter(r => r.d.vs != null && weekend === "any" && r.d.vs < 0).length;
+  $("#stats").innerHTML = `
+    <div class="stat"><div class="k">Cheapest destination</div><div class="v">${best ? money(best.x.p) : "—"}</div>
+      <div class="s">${best ? esc(best.d.city) + ", " + best.d.state + " · " + wk(best.x.w) : "No data yet"}</div></div>
+    <div class="stat"><div class="k">Deals now</div><div class="v">${DATA.deals.length}</div>
+      <div class="s">${DATA.n_runs < DATA.deal_min_checks ? "Switches on after a couple of days" : "20%+ below typical"}</div></div>
+    <div class="stat"><div class="k">Destinations priced</div><div class="v">${rows.length}</div>
+      <div class="s">of ${DATA.dests.length} tracked · ${new Set(rows.map(r=>r.d.state)).size} states</div></div>
+    <div class="stat"><div class="k">Checks so far</div><div class="v">${DATA.n_runs}</div>
+      <div class="s">${DATA.searches} searches in the latest run</div></div>`;
+}
+
+/* ---------- map ---------- */
+function bins(values){
+  const v = [...values].sort((a,b)=>a-b); if (!v.length) return [];
+  return [0.2,0.4,0.6,0.8].map(q => v[Math.floor(q*(v.length-1))]);
+}
+function renderMap(){
+  const byState = {};
+  for (const d of DATA.dests){
+    const x = priceFor(d); if (!x) continue;
+    (byState[d.state] ||= []).push({d, x});
+  }
+  for (const s in byState) byState[s].sort((a,b) => a.x.p - b.x.p);
+  const cuts = bins(Object.values(byState).map(a => a[0].x.p));
+  // darker = cheaper
+  const color = p => { let i = cuts.findIndex(c => p <= c); if (i === -1) i = 4; return 4 - i; };
+  const map = $("#map"); map.innerHTML = "";
+  for (const [st,[c,r]] of Object.entries(GRID)){
+    const el = document.createElement("div");
+    el.style.gridColumn = c + 1; el.style.gridRow = r + 1;
+    const list = byState[st];
+    if (!list){
+      el.className = "tile none";
+      el.innerHTML = `<b>${st}</b>`;
+      el.title = st === "IL" ? "Home" : "Not tracked / no United flights";
+    } else {
+      const lvl = color(list[0].x.p);
+      el.className = "tile" + (stateFilter === st ? " sel" : "");
+      el.style.background = css(`--seq-${lvl}`);
+      el.style.color = lvl >= 3 ? css("--seq-ink-dark") : css("--ink");
+      el.innerHTML = `<b>${st}</b><span>${money(list[0].x.p)}</span>`;
+      el.tabIndex = 0;
+      el.setAttribute("aria-label", `${st}: cheapest ${money(list[0].x.p)}`);
+      const html = `<b>${st}</b><br>` + list.map(({d,x}) => `${esc(d.city)} (${d.code}) — <b>${money(x.p)}</b> · ${wk(x.w)} · ${esc((x.f||"").slice(0,3))}${x.s===0?" · nonstop":""}`).join("<br>");
+      el.onmouseenter = e => showTip(e, html); el.onmousemove = moveTip; el.onmouseleave = hideTip;
+      el.onclick = () => { stateFilter = stateFilter === st ? null : st; renderAll(); };
+      el.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); el.click(); } };
+    }
+    map.appendChild(el);
+  }
+  $("#legend").innerHTML = cuts.length ? `<span>Cheaper</span>` + [4,3,2,1,0].map(i => `<i style="background:var(--seq-${i})"></i>`).join("") + `<span>Pricier</span>` : "";
+}
+
+/* ---------- deals ---------- */
+function renderDeals(){
+  let ds = DATA.deals; if (weekend !== "any") ds = ds.filter(d => d.depart === weekend);
+  if (stateFilter) ds = ds.filter(d => d.state === stateFilter);
+  $("#deals").innerHTML = ds.length ? ds.slice(0,24).map(d => `
+    <div class="deal"><div class="c">${esc(d.city)}, ${d.state} <span class="code">${d.dest}</span></div>
+    <div class="p">${money(d.price)}</div>
+    <div class="o">${Math.round(d.off*100)}% below typical ${money(d.typical)}</div>
+    <div class="m">${wk(d.depart)} · leave ${esc(d.flight)} · ${d.stops===0?"nonstop":d.stops+" stop"}${d.more?` · +${d.more} more weekend${d.more>1?"s":""}`:""}</div></div>`).join("")
+    : `<div class="empty">${DATA.n_runs < DATA.deal_min_checks ? "Deal spotting starts once each city has a few days of price history." : "No deals matching this view right now."}</div>`;
+}
+
+/* ---------- table ---------- */
+const COLS = [
+  {k:"dest", l:"Destination"},
+  {k:"price", l:"Price", num:1},
+  {k:"wk", l:"Weekend"},
+  {k:"leave", l:"Leave"},
+  {k:"stops", l:"Stops", num:1},
+  {k:"vs", l:"vs. typical", num:1},
+  {k:"typical", l:"Typical", num:1},
+  {k:"low", l:"All-time low", num:1},
+  {k:"swing", l:"Swing", num:1},
+  {k:"trend", l:"Trend", nosort:1},
+];
+function spark(series){
+  if (series.length < 2) return "";
+  const w = 90, h = 24, mn = Math.min(...series), mx = Math.max(...series), r = mx - mn || 1;
+  const pts = series.map((v,i) => `${(i/(series.length-1)*w).toFixed(1)},${(h-2-(v-mn)/r*(h-4)).toFixed(1)}`).join(" ");
+  const last = pts.split(" ").pop().split(",");
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline fill="none" stroke="var(--accent)" stroke-width="1.6" points="${pts}"/><circle cx="${last[0]}" cy="${last[1]}" r="2.5" fill="var(--accent)"/></svg>`;
+}
+function renderTable(){
+  const q = $("#q").value.trim().toLowerCase();
+  $("#clear").hidden = !stateFilter;
+  $("#clear").textContent = `Clear filter: ${stateFilter || ""} ✕`;
+  let rows = DATA.dests.map(d => {
+    const x = priceFor(d);
+    const vs = x && d.typical ? x.p / d.typical - 1 : null;
+    return {d, price: x ? x.p : null, wk: x ? x.w : null, leave: x ? x.f : null, stops: x ? x.s : null, vs, typical: d.typical, low: d.low, swing: d.swing, dest: d.city};
+  });
+  if (stateFilter) rows = rows.filter(r => r.d.state === stateFilter);
+  if (q) rows = rows.filter(r => (r.d.city + " " + r.d.state + " " + r.d.code).toLowerCase().includes(q));
+  rows.sort((a,b) => {
+    const A = a[sortKey], B = b[sortKey];
+    if (A == null && B == null) return 0; if (A == null) return 1; if (B == null) return -1;
+    const c = typeof A === "string" ? A.localeCompare(B) : A - B;
+    return sortAsc ? c : -c;
+  });
+  $("#tbl thead").innerHTML = "<tr>" + COLS.map(c => `<th class="${c.num?"num":""}" data-k="${c.k}" ${c.k===sortKey?`aria-sort="${sortAsc?"ascending":"descending"}"`:""}>${c.l}</th>`).join("") + "</tr>";
+  $("#tbl tbody").innerHTML = rows.map(r => `<tr>
+    <td>${esc(r.d.city)}, ${r.d.state}<span class="code">${r.d.code}</span></td>
+    <td class="num"><b>${money(r.price)}</b></td>
+    <td>${r.wk ? wk(r.wk) : "—"}</td>
+    <td>${r.leave ? esc(r.leave.split("→")[0]) : "—"}</td>
+    <td class="num">${r.stops == null ? "—" : r.stops === 0 ? "nonstop" : r.stops}</td>
+    <td class="num ${r.vs != null && Math.round(r.vs*100) < 0 ? "neg" : "pos"}">${r.vs == null ? "—" : pctTxt(r.vs)}</td>
+    <td class="num">${money(r.typical)}</td>
+    <td class="num">${money(r.low)}</td>
+    <td class="num">${r.swing == null ? "—" : "±" + Math.round(r.swing*50) + "%"}</td>
+    <td>${spark(r.d.series)}</td></tr>`).join("") || `<tr><td colspan="10" class="empty">No matches.</td></tr>`;
+}
+$("#tbl").addEventListener("click", e => {
+  const th = e.target.closest("th"); if (!th) return;
+  const c = COLS.find(c => c.k === th.dataset.k); if (!c || c.nosort) return;
+  if (sortKey === c.k) sortAsc = !sortAsc; else { sortKey = c.k; sortAsc = !(c.k === "swing"); }
+  renderTable();
+});
+$("#q").addEventListener("input", renderTable);
+$("#clear").addEventListener("click", () => { stateFilter = null; renderAll(); });
+
+/* ---------- heatmap ---------- */
+function mix(a, b, t){
+  const p = h => [1,3,5].map(i => parseInt(h.slice(i,i+2),16));
+  const A = p(a), B = p(b);
+  return "#" + A.map((v,i) => Math.round(v + (B[i]-v)*t).toString(16).padStart(2,"0")).join("");
+}
+function renderHeat(){
+  const W = DATA.weekends;
+  let ds = DATA.dests.filter(d => Object.keys(d.grid).length);
+  if (stateFilter) ds = ds.filter(d => d.state === stateFilter);
+  ds.sort((a,b) => (a.typ_wk ?? 1e9) - (b.typ_wk ?? 1e9));
+  const cool = css("--div-cool"), mid = css("--div-mid"), warm = css("--div-warm");
+  const heat = $("#heat");
+  heat.style.gridTemplateColumns = `minmax(150px,1.6fr) repeat(${W.length}, minmax(60px,1fr))`;
+  let html = `<div class="h"></div>` + W.map(d => `<div class="h">${wk(d)}</div>`).join("");
+  for (const d of ds){
+    html += `<div class="n">${esc(d.city)}, ${d.state}</div>`;
+    for (const w of W){
+      const g = d.grid[w];
+      if (!g){ html += `<div class="c" style="background:var(--none);color:var(--ink-3)">—</div>`; continue; }
+      const rel = d.typ_wk ? g.p / d.typ_wk - 1 : 0;
+      const t = Math.min(Math.abs(rel) / 0.35, 1);
+      const bg = mix(mid, rel < 0 ? cool : warm, t);
+      const ink = t > 0.55 ? "#fff" : css("--ink");
+      html += `<div class="c" style="background:${bg};color:${ink}" data-tip="${esc(d.city)} · ${wk(w)}<br><b>${money(g.p)}</b> · leave ${esc(g.f||"")}${g.s===0?" · nonstop":""}${d.typ_wk?`<br>${pctTxt(rel)} vs typical ${money(d.typ_wk)}`:""}">${money(g.p)}</div>`;
+    }
+  }
+  heat.innerHTML = html;
+}
+$("#heat").addEventListener("mousemove", e => { const c = e.target.closest("[data-tip]"); if (c) showTip(e, c.dataset.tip); else hideTip(); });
+$("#heat").addEventListener("mouseleave", hideTip);
+
+function renderAll(){
+  for (const b of document.querySelectorAll("#chips .chip")) b.setAttribute("aria-pressed", b.dataset.w === weekend);
+  renderStats(); renderMap(); renderDeals(); renderTable(); renderHeat();
+}
+
+if (!DATA){
+  document.querySelector(".wrap").innerHTML = "<h1>No data yet</h1><p>The first check hasn't finished. Come back after the bot runs.</p>";
+} else {
+  renderHeader(); renderAll();
+  const ns = DATA.not_served.length ? ` · No United flights found to: ${DATA.not_served.join(", ")}` : "";
+  $("#foot").textContent = `Prices from Google Flights for United regular Economy round trips; confirm in Chase Travel before booking${ns}.`;
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", renderAll);
+}
+</script>
+</body>
+</html>

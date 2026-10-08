@@ -1,8 +1,6 @@
 name: Track weekend fares
 
 on:
-  schedule:
-    - cron: "43 12,23 * * *"
   workflow_dispatch:
 
 permissions:

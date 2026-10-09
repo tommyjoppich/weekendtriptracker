@@ -1,36 +1,44 @@
 # 🗺️ United weekend trips from Chicago (ORD)
 
 Leave Thu after 6 PM or Fri before 6 PM · back Sun by 10 PM · United only · regular Economy · next 10 weekends
-_Updated 2026-10-08 13:50 Chicago time · run 3 · 1400 searches this run_
+_Updated 2026-10-08 18:43 Chicago time · run 4 · 1400 searches this run_
 
 **📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).
 
-> ⏳ Run 3 of the first 4: "typical price", swings and deal alerts switch on after a couple of days of data.
+## 🔥 Deals right now
+
+| Destination | Weekend | Price | Typical | Off | Flight |
+|---|---|---|---|---|---|
+| Bozeman, MT (BZN) | Dec 3–6 | **$449** | $634 | 29% | Fri 08:59→11:33 nonstop (+2 more weekends) |
+| Los Angeles, CA (LAX) | Nov 12–15 | **$307** | $430 | 29% | Fri 15:00→17:35 nonstop (+4 more weekends) |
+| Fort Myers, FL (RSW) | Dec 3–6 | **$448** | $564 | 21% | Thu 18:20→22:28 nonstop |
+| Fort Lauderdale, FL (FLL) | Oct 29–Nov 1 | **$359** | $452 | 20% | Fri 15:37→19:46 nonstop |
+| Portland, ME (PWM) | Nov 5–8 | **$457** | $572 | 20% | Thu 18:18→21:51 nonstop |
 
 ## 💸 Cheapest right now
 
 | # | Destination | Price | Best weekend | Leave | Stops | vs. typical |
 |---|---|---|---|---|---|---|
 | 1 | Milwaukee, WI (MKE) | **$295** | Oct 29–Nov 1 | Thu 21:20 | nonstop | +0% |
-| 2 | Atlanta, GA (ATL) | **$306** | Dec 3–6 | Fri 06:25 | nonstop | +0% |
-| 3 | Los Angeles, CA (LAX) | **$307** | Nov 5–8 | Fri 14:00 | nonstop | +0% |
-| 4 | Cleveland, OH (CLE) | **$339** | Nov 19–22 | Thu 19:49 | nonstop | +0% |
-| 5 | Washington Dulles, VA (IAD) | **$347** | Nov 12–15 | Thu 18:07 | nonstop | +0% |
-| 6 | Newark / New York, NJ (EWR) | **$351** | Nov 5–8 | Thu 20:40 | nonstop | +0% |
-| 7 | New York LaGuardia, NY (LGA) | **$351** | Nov 12–15 | Thu 20:10 | nonstop | +0% |
+| 2 | Atlanta, GA (ATL) | **$306** | Nov 12–15 | Fri 07:05 | nonstop | +0% |
+| 3 | Los Angeles, CA (LAX) | **$307** | Nov 12–15 | Fri 15:00 | nonstop | +0% |
+| 4 | Cleveland, OH (CLE) | **$339** | Nov 19–22 | Fri 07:15 | nonstop | +0% |
+| 5 | Washington Dulles, VA (IAD) | **$347** | Dec 3–6 | Thu 21:35 | nonstop | +0% |
+| 6 | Newark / New York, NJ (EWR) | **$351** | Nov 12–15 | Thu 20:40 | nonstop | +0% |
+| 7 | New York LaGuardia, NY (LGA) | **$351** | Nov 5–8 | Thu 20:10 | nonstop | +0% |
 | 8 | Denver, CO (DEN) | **$352** | Nov 5–8 | Thu 21:00 | nonstop | +0% |
 | 9 | Boston, MA (BOS) | **$358** | Oct 29–Nov 1 | Thu 20:01 | nonstop | +0% |
 | 10 | Minneapolis, MN (MSP) | **$358** | Nov 19–22 | Fri 07:00 | nonstop | +0% |
-| 11 | St. Louis, MO (STL) | **$369** | Nov 19–22 | Fri 13:00 | nonstop | +0% |
-| 12 | Philadelphia, PA (PHL) | **$374** | Nov 5–8 | Thu 19:57 | nonstop | +0% |
-| 13 | Fort Lauderdale, FL (FLL) | **$374** | Nov 12–15 | Fri 12:59 | 1 | +0% |
-| 14 | Detroit, MI (DTW) | **$376** | Nov 12–15 | Thu 19:47 | nonstop | +0% |
-| 15 | Louisville, KY (SDF) | **$376** | Dec 10–13 | Thu 21:20 | nonstop | +0% |
+| 11 | Fort Lauderdale, FL (FLL) | **$359** | Oct 29–Nov 1 | Fri 15:37 | nonstop | -4% |
+| 12 | St. Louis, MO (STL) | **$369** | Nov 19–22 | Fri 13:00 | nonstop | +0% |
+| 13 | Philadelphia, PA (PHL) | **$374** | Nov 12–15 | Thu 18:24 | nonstop | +0% |
+| 14 | Detroit, MI (DTW) | **$376** | Dec 10–13 | Thu 19:45 | nonstop | +0% |
+| 15 | Louisville, KY (SDF) | **$376** | Nov 12–15 | Thu 18:10 | nonstop | +0% |
 | 16 | Charleston, WV (CRW) | **$379** | Nov 5–8 | Fri 10:25 | nonstop | +0% |
-| 17 | Austin, TX (AUS) | **$380** | Dec 3–6 | Thu 19:45 | nonstop | +0% |
+| 17 | Austin, TX (AUS) | **$380** | Dec 10–13 | Thu 19:45 | nonstop | +0% |
 | 18 | Tampa, FL (TPA) | **$381** | Nov 5–8 | Fri 17:45 | nonstop | +0% |
 | 19 | Indianapolis, IN (IND) | **$387** | Nov 12–15 | Thu 19:55 | nonstop | +0% |
-| 20 | Nashville, TN (BNA) | **$393** | Nov 12–15 | Thu 21:20 | nonstop | +0% |
+| 20 | Nashville, TN (BNA) | **$393** | Nov 5–8 | Thu 21:20 | nonstop | +0% |
 
 ## 🏆 Consistently cheap (lowest typical price)
 
@@ -48,7 +56,7 @@ _Updated 2026-10-08 13:50 Chicago time · run 3 · 1400 searches this run_
 | 10 | Minneapolis, MN (MSP) | $358 | $358 | ±0% |
 | 11 | St. Louis, MO (STL) | $369 | $369 | ±0% |
 | 12 | Philadelphia, PA (PHL) | $374 | $374 | ±0% |
-| 13 | Fort Lauderdale, FL (FLL) | $374 | $374 | ±0% |
+| 13 | Fort Lauderdale, FL (FLL) | $374 | $359 | ±1% |
 | 14 | Detroit, MI (DTW) | $376 | $376 | ±0% |
 | 15 | Louisville, KY (SDF) | $376 | $376 | ±0% |
 
@@ -56,16 +64,16 @@ _Updated 2026-10-08 13:50 Chicago time · run 3 · 1400 searches this run_
 
 | Destination | Typical | Low | Swing |
 |---|---|---|---|
-| Jackson, MS (JAN) | $590 | $562 | ±6% |
-| Phoenix, AZ (PHX) | $397 | $397 | ±3% |
-| San Jose, CA (SJC) | $552 | $530 | ±2% |
-| Orlando, FL (MCO) | $414 | $414 | ±1% |
-| Portland, ME (PWM) | $471 | $457 | ±1% |
-| Dallas, TX (DFW) | $451 | $441 | ±1% |
-| Raleigh-Durham, NC (RDU) | $409 | $409 | ±1% |
-| Jacksonville, FL (JAX) | $456 | $456 | ±1% |
-| Providence, RI (PVD) | $494 | $494 | ±0% |
-| New Orleans, LA (MSY) | $478 | $477 | ±0% |
+| Jackson, MS (JAN) | $621 | $562 | ±7% |
+| Phoenix, AZ (PHX) | $412 | $397 | ±4% |
+| Fort Myers, FL (RSW) | $423 | $423 | ±2% |
+| San Jose, CA (SJC) | $541 | $530 | ±2% |
+| Orlando, FL (MCO) | $422 | $414 | ±2% |
+| Raleigh-Durham, NC (RDU) | $414 | $409 | ±2% |
+| Portland, ME (PWM) | $464 | $457 | ±2% |
+| Fort Lauderdale, FL (FLL) | $374 | $359 | ±1% |
+| Dallas, TX (DFW) | $452 | $441 | ±1% |
+| Jacksonville, FL (JAX) | $460 | $456 | ±1% |
 
 ## 📅 Cheapest weekends overall
 
@@ -73,15 +81,15 @@ _Each fare compared with that city's typical price, then averaged across all cit
 
 | Weekend | vs. typical |
 |---|---|
-| Dec 3–6 | -7% |
 | Nov 5–8 | -6% |
+| Dec 3–6 | -6% |
 | Dec 10–13 | -6% |
 | Nov 12–15 | -5% |
 | Oct 29–Nov 1 | -4% |
 | Nov 19–22 | +0% |
 | Nov 26–29 | +30% |
 | Oct 22–25 | +35% |
-| Oct 15–18 | +39% |
-| Oct 8–11 | +44% |
+| Oct 15–18 | +43% |
+| Oct 8–11 | +45% |
 
 _Raw data: `data/prices-YYYY-MM.csv` — one row per destination × departure day × weekend × run._

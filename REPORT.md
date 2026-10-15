@@ -1,7 +1,7 @@
 # 🗺️ United weekend trips from Chicago (ORD)
 
 Leave Thu after 6 PM or Fri before 6 PM · back Sun by 10 PM · United only · regular Economy · next 10 weekends
-_Updated 2026-10-14 18:43 Chicago time · run 16 · 1400 searches this run_
+_Updated 2026-10-15 07:43 Chicago time · run 17 · 1400 searches this run_
 
 **📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).
 
@@ -9,41 +9,37 @@ _Updated 2026-10-14 18:43 Chicago time · run 16 · 1400 searches this run_
 
 | Destination | Weekend | Price | Typical | Off | Flight |
 |---|---|---|---|---|---|
-| Charleston, SC (CHS) | Dec 3–6 | **$425** | $585 | 27% | Fri 17:59→21:21 nonstop |
-| Bozeman, MT (BZN) | Dec 17–20 | **$459** | $613 | 25% | Thu 20:19→22:57 nonstop (+3 more weekends) |
-| Los Angeles, CA (LAX) | Dec 10–13 | **$337** | $449 | 25% | Fri 10:25→13:09 nonstop (+1 more weekend) |
+| Charleston, SC (CHS) | Dec 3–6 | **$435** | $585 | 26% | Fri 07:29→11:02 nonstop |
+| Bozeman, MT (BZN) | Dec 17–20 | **$469** | $626 | 25% | Thu 20:19→22:57 nonstop (+3 more weekends) |
+| Los Angeles, CA (LAX) | Dec 3–6 | **$337** | $449 | 25% | Fri 10:25→13:09 nonstop (+1 more weekend) |
 | New Orleans, LA (MSY) | Dec 17–20 | **$451** | $591 | 24% | Fri 17:58→23:15 1 stop |
-| Manchester, NH (MHT) | Nov 5–8 | **$492** | $639 | 23% | Fri 05:55→14:03 1 stop (+1 more weekend) |
-| Fort Lauderdale, FL (FLL) | Oct 29–Nov 1 | **$347** | $448 | 23% | Thu 19:45→23:59 nonstop |
-| St. Louis, MO (STL) | Dec 10–13 | **$288** | $369 | 22% | Fri 13:10→14:41 nonstop (+3 more weekends) |
-| Minneapolis, MN (MSP) | Nov 12–15 | **$283** | $358 | 21% | Fri 07:00→08:33 nonstop (+3 more weekends) |
-| Providence, RI (PVD) | Nov 12–15 | **$456** | $574 | 21% | Fri 17:54→21:27 nonstop (+2 more weekends) |
-| Phoenix, AZ (PHX) | Dec 10–13 | **$423** | $530 | 20% | Fri 07:15→10:18 nonstop (+1 more weekend) |
+| Fort Lauderdale, FL (FLL) | Oct 29–Nov 1 | **$347** | $446 | 22% | Fri 10:52→15:05 nonstop |
+| Manchester, NH (MHT) | Dec 3–6 | **$499** | $639 | 22% | Fri 05:55→14:03 1 stop |
 
 ## 💸 Cheapest right now
 
 | # | Destination | Price | Best weekend | Leave | Stops | vs. typical |
 |---|---|---|---|---|---|---|
-| 1 | Cleveland, OH (CLE) | **$273** | Dec 3–6 | Thu 21:50 | nonstop | +0% |
-| 2 | Minneapolis, MN (MSP) | **$283** | Nov 12–15 | Fri 07:00 | nonstop | +0% |
-| 3 | St. Louis, MO (STL) | **$288** | Dec 10–13 | Fri 13:10 | nonstop | +0% |
-| 4 | Milwaukee, WI (MKE) | **$319** | Nov 12–15 | Fri 16:00 | nonstop | +0% |
-| 5 | Los Angeles, CA (LAX) | **$337** | Dec 10–13 | Fri 10:25 | nonstop | +6% |
-| 6 | Louisville, KY (SDF) | **$338** | Dec 3–6 | Fri 14:10 | nonstop | +0% |
-| 7 | Detroit, MI (DTW) | **$341** | Nov 5–8 | Thu 19:47 | nonstop | +0% |
-| 8 | Atlanta, GA (ATL) | **$343** | Dec 10–13 | Fri 06:25 | nonstop | +0% |
-| 9 | Fort Lauderdale, FL (FLL) | **$347** | Oct 29–Nov 1 | Thu 19:45 | nonstop | +0% |
-| 10 | Boston, MA (BOS) | **$368** | Nov 5–8 | Thu 20:07 | nonstop | -11% |
-| 11 | Omaha, NE (OMA) | **$369** | Dec 3–6 | Fri 10:25 | nonstop | +0% |
-| 12 | Denver, CO (DEN) | **$370** | Nov 12–15 | Thu 21:00 | nonstop | +0% |
-| 13 | Des Moines, IA (DSM) | **$373** | Dec 10–13 | Fri 17:45 | nonstop | +0% |
-| 14 | Nashville, TN (BNA) | **$375** | Dec 10–13 | Fri 10:45 | nonstop | -6% |
-| 15 | Indianapolis, IN (IND) | **$380** | Dec 3–6 | Thu 21:49 | nonstop | +0% |
-| 16 | Kansas City, MO (MCI) | **$382** | Nov 12–15 | Thu 19:59 | nonstop | +0% |
-| 17 | Washington Dulles, VA (IAD) | **$383** | Nov 19–22 | Thu 19:50 | 1 | +0% |
-| 18 | Raleigh-Durham, NC (RDU) | **$394** | Nov 12–15 | Fri 07:30 | nonstop | +0% |
-| 19 | Charleston, WV (CRW) | **$399** | Dec 17–20 | Fri 14:24 | nonstop | +5% |
-| 20 | Wichita, KS (ICT) | **$401** | Dec 3–6 | Thu 21:45 | nonstop | +0% |
+| 1 | Cleveland, OH (CLE) | **$320** | Nov 5–8 | Thu 18:10 | nonstop | +17% |
+| 2 | Minneapolis, MN (MSP) | **$330** | Dec 3–6 | Fri 07:15 | nonstop | +17% |
+| 3 | St. Louis, MO (STL) | **$335** | Nov 12–15 | Fri 17:45 | nonstop | +16% |
+| 4 | Los Angeles, CA (LAX) | **$337** | Dec 3–6 | Fri 10:25 | nonstop | +6% |
+| 5 | Milwaukee, WI (MKE) | **$339** | Nov 19–22 | Fri 16:00 | nonstop | +6% |
+| 6 | Fort Lauderdale, FL (FLL) | **$347** | Oct 29–Nov 1 | Fri 10:52 | nonstop | +0% |
+| 7 | Atlanta, GA (ATL) | **$369** | Dec 3–6 | Fri 06:25 | nonstop | +8% |
+| 8 | Louisville, KY (SDF) | **$375** | Nov 5–8 | Thu 18:10 | nonstop | +11% |
+| 9 | Washington Dulles, VA (IAD) | **$383** | Nov 19–22 | Thu 19:50 | 1 | +0% |
+| 10 | Detroit, MI (DTW) | **$385** | Nov 5–8 | Fri 14:30 | nonstop | +13% |
+| 11 | Nashville, TN (BNA) | **$385** | Dec 10–13 | Fri 07:04 | nonstop | -4% |
+| 12 | Charleston, WV (CRW) | **$399** | Dec 3–6 | Fri 14:30 | nonstop | +5% |
+| 13 | Denver, CO (DEN) | **$406** | Nov 19–22 | Thu 21:00 | nonstop | +10% |
+| 14 | Indianapolis, IN (IND) | **$410** | Dec 3–6 | Thu 19:55 | nonstop | +8% |
+| 15 | Boston, MA (BOS) | **$411** | Nov 19–22 | Fri 12:46 | nonstop | -1% |
+| 16 | Des Moines, IA (DSM) | **$413** | Nov 12–15 | Thu 20:25 | nonstop | +11% |
+| 17 | Newark / New York, NJ (EWR) | **$417** | Nov 5–8 | Thu 19:45 | nonstop | +4% |
+| 18 | New York LaGuardia, NY (LGA) | **$417** | Nov 5–8 | Thu 20:10 | nonstop | +4% |
+| 19 | Raleigh-Durham, NC (RDU) | **$423** | Dec 3–6 | Fri 07:35 | nonstop | +7% |
+| 20 | Omaha, NE (OMA) | **$428** | Dec 10–13 | Thu 19:55 | nonstop | +16% |
 
 ## 🏆 Consistently cheap (lowest typical price)
 
@@ -52,7 +48,7 @@ _Updated 2026-10-14 18:43 Chicago time · run 16 · 1400 searches this run_
 | 1 | Cleveland, OH (CLE) | $273 | $273 | ±12% |
 | 2 | Minneapolis, MN (MSP) | $283 | $283 | ±13% |
 | 3 | St. Louis, MO (STL) | $288 | $288 | ±14% |
-| 4 | Los Angeles, CA (LAX) | $317 | $307 | ±4% |
+| 4 | Los Angeles, CA (LAX) | $317 | $307 | ±5% |
 | 5 | Milwaukee, WI (MKE) | $319 | $295 | ±4% |
 | 6 | Louisville, KY (SDF) | $338 | $338 | ±6% |
 | 7 | Detroit, MI (DTW) | $341 | $341 | ±5% |
@@ -86,15 +82,15 @@ _Each fare compared with that city's typical price, then averaged across all cit
 
 | Weekend | vs. typical |
 |---|---|
-| Dec 3–6 | -8% |
-| Dec 10–13 | -8% |
-| Nov 12–15 | -5% |
-| Nov 5–8 | -5% |
-| Dec 17–20 | +0% |
-| Nov 19–22 | +2% |
-| Nov 26–29 | +23% |
-| Oct 29–Nov 1 | +31% |
+| Dec 3–6 | -2% |
+| Dec 10–13 | -2% |
+| Nov 12–15 | -0% |
+| Nov 5–8 | +0% |
+| Nov 19–22 | +1% |
+| Dec 17–20 | +4% |
+| Nov 26–29 | +28% |
+| Oct 29–Nov 1 | +30% |
+| Oct 22–25 | +40% |
 | Oct 15–18 | +41% |
-| Oct 22–25 | +41% |
 
 _Raw data: `data/prices-YYYY-MM.csv` — one row per destination × departure day × weekend × run._

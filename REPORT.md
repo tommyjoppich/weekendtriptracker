@@ -1,7 +1,7 @@
 # 🗺️ United weekend trips from Chicago (ORD)
 
 Leave Thu after 6 PM or Fri before 6 PM · back Sun by 10 PM · United only · regular Economy · next 10 weekends
-_Updated 2026-10-21 18:43 Chicago time · run 30 · 1400 searches this run_
+_Updated 2026-10-22 07:43 Chicago time · run 31 · 1400 searches this run_
 
 **📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).
 
@@ -9,46 +9,46 @@ _Updated 2026-10-21 18:43 Chicago time · run 30 · 1400 searches this run_
 
 | Destination | Weekend | Price | Typical | Off | Flight |
 |---|---|---|---|---|---|
-| Washington National, VA (DCA) | Dec 10–13 | **$284** | $482 | 41% | Fri 05:55→08:51 nonstop (+4 more weekends) |
-| Baltimore, MD (BWI) | Dec 17–20 | **$284** | $467 | 39% | Fri 07:15→10:19 nonstop (+4 more weekends) |
-| Dallas, TX (DFW) | Dec 17–20 | **$299** | $482 | 38% | Thu 20:03→22:52 nonstop (+4 more weekends) |
+| Washington National, VA (DCA) | Nov 12–15 | **$284** | $476 | 40% | Thu 18:00→21:11 nonstop (+4 more weekends) |
+| Baltimore, MD (BWI) | Nov 12–15 | **$284** | $467 | 39% | Thu 18:29→21:42 nonstop (+4 more weekends) |
+| Dallas, TX (DFW) | Dec 17–20 | **$299** | $482 | 38% | Fri 07:00→09:47 nonstop (+4 more weekends) |
 | Philadelphia, PA (PHL) | Dec 17–20 | **$273** | $439 | 38% | Thu 18:26→21:41 nonstop (+4 more weekends) |
-| Los Angeles, CA (LAX) | Dec 17–20 | **$337** | $517 | 35% | Thu 21:50→00:37 nonstop (+2 more weekends) |
-| Denver, CO (DEN) | Nov 12–15 | **$273** | $407 | 33% | Thu 21:00→22:44 nonstop (+4 more weekends) |
-| Atlanta, GA (ATL) | Dec 10–13 | **$271** | $399 | 32% | Fri 06:25→09:29 nonstop (+4 more weekends) |
-| Houston, TX (IAH) | Nov 12–15 | **$322** | $472 | 32% | Fri 17:30→20:30 nonstop (+4 more weekends) |
-| Washington Dulles, VA (IAD) | Dec 3–6 | **$284** | $415 | 32% | Thu 21:35→00:24 nonstop (+4 more weekends) |
-| St. Louis, MO (STL) | Nov 19–22 | **$279** | $402 | 31% | Thu 20:10→21:40 nonstop (+4 more weekends) |
-| Charleston, SC (CHS) | Nov 19–22 | **$398** | $573 | 31% | Fri 07:47→11:21 nonstop (+3 more weekends) |
-| Phoenix, AZ (PHX) | Dec 3–6 | **$376** | $530 | 29% | Thu 20:30→23:34 nonstop (+3 more weekends) |
-| Birmingham, AL (BHM) | Dec 3–6 | **$429** | $600 | 29% | Thu 21:20→23:15 nonstop (+1 more weekend) |
+| Los Angeles, CA (LAX) | Dec 10–13 | **$337** | $517 | 35% | Fri 10:25→13:09 nonstop (+2 more weekends) |
+| Denver, CO (DEN) | Nov 19–22 | **$273** | $407 | 33% | Thu 21:00→22:44 nonstop (+4 more weekends) |
+| Atlanta, GA (ATL) | Dec 10–13 | **$271** | $399 | 32% | Fri 06:25→09:29 nonstop (+3 more weekends) |
+| Houston, TX (IAH) | Nov 19–22 | **$322** | $472 | 32% | Thu 19:55→22:53 nonstop (+4 more weekends) |
+| Washington Dulles, VA (IAD) | Dec 10–13 | **$284** | $415 | 32% | Thu 18:15→21:18 nonstop (+3 more weekends) |
+| St. Louis, MO (STL) | Dec 17–20 | **$279** | $402 | 31% | Thu 22:00→23:38 nonstop (+4 more weekends) |
+| Charleston, SC (CHS) | Dec 10–13 | **$398** | $573 | 31% | Fri 10:38→14:00 nonstop (+2 more weekends) |
+| Phoenix, AZ (PHX) | Dec 10–13 | **$376** | $530 | 29% | Thu 20:30→23:34 nonstop (+3 more weekends) |
+| Birmingham, AL (BHM) | Dec 3–6 | **$429** | $600 | 29% | Thu 21:20→23:15 nonstop |
 | Tampa, FL (TPA) | Dec 17–20 | **$343** | $480 | 29% | Thu 19:58→23:59 nonstop (+3 more weekends) |
-| New Orleans, LA (MSY) | Dec 17–20 | **$431** | $601 | 28% | Thu 19:54→22:45 nonstop |
+| Miami, FL (MIA) | Nov 12–15 | **$421** | $587 | 28% | Thu 18:12→22:31 nonstop (+3 more weekends) |
 
 ## 💸 Cheapest right now
 
 | # | Destination | Price | Best weekend | Leave | Stops | vs. typical |
 |---|---|---|---|---|---|---|
 | 1 | Atlanta, GA (ATL) | **$271** | Dec 10–13 | Fri 06:25 | nonstop | -21% |
-| 2 | Denver, CO (DEN) | **$273** | Nov 12–15 | Thu 21:00 | nonstop | -26% |
+| 2 | Denver, CO (DEN) | **$273** | Nov 19–22 | Thu 21:00 | nonstop | -26% |
 | 3 | Philadelphia, PA (PHL) | **$273** | Dec 17–20 | Thu 18:26 | nonstop | -33% |
-| 4 | Minneapolis, MN (MSP) | **$279** | Dec 17–20 | Thu 21:54 | nonstop | -1% |
-| 5 | Cleveland, OH (CLE) | **$279** | Nov 19–22 | Fri 07:15 | nonstop | -9% |
-| 6 | St. Louis, MO (STL) | **$279** | Nov 19–22 | Thu 20:10 | nonstop | -9% |
-| 7 | Washington Dulles, VA (IAD) | **$284** | Dec 3–6 | Thu 21:35 | nonstop | -26% |
-| 8 | Washington National, VA (DCA) | **$284** | Dec 10–13 | Fri 05:55 | nonstop | -35% |
-| 9 | Baltimore, MD (BWI) | **$284** | Dec 17–20 | Fri 07:15 | nonstop | -35% |
-| 10 | Dallas, TX (DFW) | **$299** | Dec 17–20 | Thu 20:03 | nonstop | -31% |
-| 11 | Milwaukee, WI (MKE) | **$299** | Nov 12–15 | Thu 19:45 | nonstop | -6% |
-| 12 | Boston, MA (BOS) | **$313** | Dec 17–20 | Thu 18:24 | nonstop | -19% |
-| 13 | Houston, TX (IAH) | **$322** | Nov 12–15 | Fri 17:30 | nonstop | -24% |
-| 14 | Newark / New York, NJ (EWR) | **$324** | Dec 3–6 | Thu 19:54 | nonstop | -19% |
-| 15 | New York LaGuardia, NY (LGA) | **$335** | Dec 10–13 | Thu 18:30 | nonstop | -17% |
-| 16 | Louisville, KY (SDF) | **$335** | Dec 3–6 | Thu 18:20 | nonstop | -4% |
-| 17 | Los Angeles, CA (LAX) | **$337** | Dec 17–20 | Thu 21:50 | nonstop | +0% |
-| 18 | Tampa, FL (TPA) | **$343** | Dec 17–20 | Thu 19:58 | nonstop | -19% |
-| 19 | Detroit, MI (DTW) | **$344** | Dec 10–13 | Thu 18:10 | nonstop | -3% |
-| 20 | Austin, TX (AUS) | **$356** | Dec 3–6 | Thu 19:45 | nonstop | -8% |
+| 4 | Minneapolis, MN (MSP) | **$279** | Dec 10–13 | Fri 07:15 | nonstop | -1% |
+| 5 | Cleveland, OH (CLE) | **$279** | Dec 17–20 | Thu 21:26 | nonstop | -9% |
+| 6 | St. Louis, MO (STL) | **$279** | Dec 17–20 | Thu 22:00 | nonstop | -9% |
+| 7 | Washington Dulles, VA (IAD) | **$284** | Dec 10–13 | Thu 18:15 | nonstop | -26% |
+| 8 | Washington National, VA (DCA) | **$284** | Nov 12–15 | Thu 18:00 | nonstop | -35% |
+| 9 | Baltimore, MD (BWI) | **$284** | Nov 12–15 | Thu 18:29 | nonstop | -35% |
+| 10 | Dallas, TX (DFW) | **$299** | Dec 17–20 | Fri 07:00 | nonstop | -31% |
+| 11 | Milwaukee, WI (MKE) | **$299** | Dec 10–13 | Thu 19:50 | nonstop | -6% |
+| 12 | Boston, MA (BOS) | **$313** | Nov 12–15 | Thu 18:00 | nonstop | -19% |
+| 13 | Houston, TX (IAH) | **$322** | Nov 19–22 | Thu 19:55 | nonstop | -24% |
+| 14 | New York LaGuardia, NY (LGA) | **$326** | Nov 19–22 | Fri 05:55 | 1 | -19% |
+| 15 | Louisville, KY (SDF) | **$335** | Dec 3–6 | Thu 18:20 | nonstop | -4% |
+| 16 | Los Angeles, CA (LAX) | **$337** | Dec 10–13 | Fri 10:25 | nonstop | +0% |
+| 17 | Tampa, FL (TPA) | **$343** | Dec 17–20 | Thu 19:58 | nonstop | -19% |
+| 18 | Detroit, MI (DTW) | **$344** | Dec 17–20 | Thu 19:45 | nonstop | -3% |
+| 19 | Austin, TX (AUS) | **$356** | Dec 17–20 | Thu 19:45 | nonstop | -8% |
+| 20 | Newark / New York, NJ (EWR) | **$357** | Dec 10–13 | Fri 12:55 | nonstop | -11% |
 
 ## 🏆 Consistently cheap (lowest typical price)
 
@@ -91,15 +91,15 @@ _Each fare compared with that city's typical price, then averaged across all cit
 
 | Weekend | vs. typical |
 |---|---|
-| Dec 3–6 | -18% |
 | Dec 10–13 | -17% |
+| Dec 3–6 | -17% |
 | Dec 17–20 | -16% |
-| Nov 19–22 | -15% |
-| Nov 12–15 | -15% |
-| Dec 24–27 | -2% |
-| Nov 26–29 | +20% |
-| Nov 5–8 | +23% |
+| Nov 12–15 | -14% |
+| Nov 19–22 | -13% |
+| Dec 24–27 | -1% |
+| Nov 26–29 | +23% |
+| Nov 5–8 | +24% |
 | Oct 29–Nov 1 | +31% |
-| Oct 22–25 | +37% |
+| Oct 22–25 | +38% |
 
 _Raw data: `data/prices-YYYY-MM.csv` — one row per destination × departure day × weekend × run._

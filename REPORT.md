@@ -1,7 +1,7 @@
 # 🗺️ United weekend trips from Chicago (ORD)
 
 Leave Thu after 6 PM or Fri before 6 PM · back Sun by 10 PM · United only · regular Economy · next 10 weekends
-_Updated 2026-11-05 18:43 Chicago time · run 60 · 1400 searches this run_
+_Updated 2026-11-06 07:43 Chicago time · run 61 · 1400 searches this run_
 
 **📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).
 
@@ -9,78 +9,69 @@ _Updated 2026-11-05 18:43 Chicago time · run 60 · 1400 searches this run_
 
 | Destination | Weekend | Price | Typical | Off | Flight |
 |---|---|---|---|---|---|
-| Seattle, WA (SEA) | Dec 3–6 | **$367** | $552 | 34% | Thu 19:55→22:43 nonstop (+2 more weekends) |
-| Birmingham, AL (BHM) | Dec 3–6 | **$407** | $606 | 33% | Thu 21:20→23:15 nonstop (+1 more weekend) |
-| Manchester, NH (MHT) | Jan 7–10 | **$486** | $705 | 31% | Fri 06:00→14:01 1 stop (+1 more weekend) |
-| Fort Lauderdale, FL (FLL) | Dec 3–6 | **$327** | $454 | 28% | Fri 15:29→23:42 1 stop |
-| Bozeman, MT (BZN) | Dec 3–6 | **$464** | $629 | 26% | Fri 08:59→11:33 nonstop (+3 more weekends) |
-| Miami, FL (MIA) | Jan 7–10 | **$437** | $587 | 26% | Thu 18:19→22:45 nonstop (+1 more weekend) |
-| Charleston, SC (CHS) | Jan 7–10 | **$429** | $569 | 25% | Fri 07:30→11:08 nonstop |
-| Jackson Hole, WY (JAC) | Dec 3–6 | **$532** | $704 | 24% | Fri 08:58→11:23 nonstop (+1 more weekend) |
-| New Orleans, LA (MSY) | Jan 7–10 | **$456** | $601 | 24% | Fri 10:30→16:12 1 stop |
-| Cleveland, OH (CLE) | Dec 17–20 | **$278** | $357 | 22% | Thu 21:26→23:59 nonstop (+3 more weekends) |
-| Boise, ID (BOI) | Dec 3–6 | **$486** | $621 | 22% | Fri 10:25→16:50 1 stop (+1 more weekend) |
-| Providence, RI (PVD) | Jan 7–10 | **$453** | $576 | 21% | Fri 11:59→15:34 nonstop (+1 more weekend) |
-| Orange County, CA (SNA) | Jan 7–10 | **$469** | $595 | 21% | Thu 19:53→22:30 nonstop |
-| Rapid City, SD (RAP) | Jan 7–10 | **$449** | $566 | 21% | Thu 19:45→21:38 nonstop (+1 more weekend) |
-| Portland, ME (PWM) | Dec 10–13 | **$434** | $545 | 20% | Fri 16:37→23:24 1 stop |
+| Seattle, WA (SEA) | Dec 3–6 | **$367** | $552 | 34% | Fri 08:55→11:44 nonstop (+2 more weekends) |
+| Bozeman, MT (BZN) | Dec 3–6 | **$479** | $629 | 24% | Fri 08:59→11:33 nonstop (+2 more weekends) |
+| Fort Lauderdale, FL (FLL) | Dec 3–6 | **$354** | $454 | 22% | Fri 06:50→15:42 1 stop |
+| New Orleans, LA (MSY) | Jan 7–10 | **$471** | $601 | 22% | Fri 10:30→16:12 1 stop |
+| Birmingham, AL (BHM) | Jan 14–17 | **$479** | $607 | 21% | Thu 21:29→23:44 nonstop (+2 more weekends) |
+| Rapid City, SD (RAP) | Dec 10–13 | **$449** | $566 | 21% | Thu 19:50→21:42 nonstop (+2 more weekends) |
 
 ## 💸 Cheapest right now
 
 | # | Destination | Price | Best weekend | Leave | Stops | vs. typical |
 |---|---|---|---|---|---|---|
-| 1 | Cleveland, OH (CLE) | **$278** | Dec 17–20 | Thu 21:26 | nonstop | +0% |
-| 2 | Minneapolis, MN (MSP) | **$288** | Dec 17–20 | Thu 21:54 | nonstop | +0% |
-| 3 | St. Louis, MO (STL) | **$293** | Dec 3–6 | Thu 21:45 | nonstop | +0% |
-| 4 | Milwaukee, WI (MKE) | **$319** | Jan 7–10 | Thu 19:48 | nonstop | +0% |
-| 5 | Fort Lauderdale, FL (FLL) | **$327** | Dec 3–6 | Fri 15:29 | 1 | -9% |
-| 6 | Louisville, KY (SDF) | **$343** | Dec 10–13 | Thu 21:20 | nonstop | +0% |
-| 7 | Detroit, MI (DTW) | **$346** | Dec 3–6 | Thu 18:10 | nonstop | +0% |
-| 8 | Atlanta, GA (ATL) | **$348** | Dec 3–6 | Thu 18:08 | nonstop | +1% |
-| 9 | Nashville, TN (BNA) | **$348** | Dec 10–13 | Fri 14:00 | nonstop | -7% |
-| 10 | Seattle, WA (SEA) | **$367** | Dec 3–6 | Thu 19:55 | nonstop | -23% |
-| 11 | Raleigh-Durham, NC (RDU) | **$368** | Dec 3–6 | Thu 18:25 | nonstop | -7% |
-| 12 | Omaha, NE (OMA) | **$374** | Dec 17–20 | Thu 18:22 | nonstop | +0% |
-| 13 | Denver, CO (DEN) | **$375** | Dec 10–13 | Fri 07:00 | nonstop | +1% |
-| 14 | Des Moines, IA (DSM) | **$378** | Dec 17–20 | Fri 06:12 | nonstop | +0% |
-| 15 | Washington Dulles, VA (IAD) | **$380** | Dec 31–Jan 3 | Thu 18:10 | nonstop | +0% |
-| 16 | Indianapolis, IN (IND) | **$385** | Dec 3–6 | Thu 18:20 | nonstop | +0% |
-| 17 | Kansas City, MO (MCI) | **$387** | Dec 10–13 | Thu 19:55 | nonstop | +0% |
-| 18 | Boston, MA (BOS) | **$397** | Dec 17–20 | Fri 06:50 | nonstop | +3% |
-| 19 | Columbus, OH (CMH) | **$404** | Dec 10–13 | Fri 07:15 | nonstop | +0% |
-| 20 | Pittsburgh, PA (PIT) | **$406** | Dec 3–6 | Thu 18:10 | nonstop | -0% |
+| 1 | Cleveland, OH (CLE) | **$353** | Jan 14–17 | Thu 19:55 | nonstop | +27% |
+| 2 | Fort Lauderdale, FL (FLL) | **$354** | Dec 3–6 | Fri 06:50 | 1 | -1% |
+| 3 | Atlanta, GA (ATL) | **$359** | Dec 10–13 | Fri 06:25 | nonstop | +5% |
+| 4 | Milwaukee, WI (MKE) | **$360** | Dec 3–6 | Thu 19:50 | nonstop | +13% |
+| 5 | Seattle, WA (SEA) | **$367** | Dec 3–6 | Fri 08:55 | nonstop | -23% |
+| 6 | Minneapolis, MN (MSP) | **$372** | Dec 3–6 | Thu 18:05 | nonstop | +29% |
+| 7 | Washington Dulles, VA (IAD) | **$383** | Dec 24–27 | Thu 21:20 | 1 | +1% |
+| 8 | St. Louis, MO (STL) | **$383** | Dec 17–20 | Thu 22:00 | nonstop | +31% |
+| 9 | Boston, MA (BOS) | **$397** | Dec 17–20 | Thu 18:24 | nonstop | +3% |
+| 10 | Charleston, WV (CRW) | **$409** | Jan 14–17 | Fri 17:55 | nonstop | +3% |
+| 11 | Detroit, MI (DTW) | **$412** | Dec 31–Jan 3 | Thu 19:45 | nonstop | +19% |
+| 12 | Louisville, KY (SDF) | **$412** | Dec 3–6 | Thu 18:20 | nonstop | +20% |
+| 13 | Denver, CO (DEN) | **$420** | Dec 17–20 | Thu 21:20 | nonstop | +14% |
+| 14 | Nashville, TN (BNA) | **$423** | Jan 7–10 | Thu 19:45 | nonstop | +13% |
+| 15 | Omaha, NE (OMA) | **$433** | Dec 3–6 | Thu 19:55 | nonstop | +16% |
+| 16 | Newark / New York, NJ (EWR) | **$437** | Dec 3–6 | Fri 16:37 | nonstop | +6% |
+| 17 | New York LaGuardia, NY (LGA) | **$437** | Dec 24–27 | Fri 14:00 | nonstop | +6% |
+| 18 | Des Moines, IA (DSM) | **$439** | Jan 14–17 | Thu 18:27 | nonstop | +16% |
+| 19 | Raleigh-Durham, NC (RDU) | **$443** | Dec 17–20 | Thu 18:25 | nonstop | +12% |
+| 20 | Indianapolis, IN (IND) | **$443** | Jan 14–17 | Thu 18:20 | nonstop | +15% |
 
 ## 🏆 Consistently cheap (lowest typical price)
 
 | # | Destination | Typical | All-time low | Swing |
 |---|---|---|---|---|
-| 1 | Cleveland, OH (CLE) | $278 | $227 | ±24% |
-| 2 | Minneapolis, MN (MSP) | $288 | $227 | ±24% |
-| 3 | St. Louis, MO (STL) | $293 | $227 | ±31% |
-| 4 | Milwaukee, WI (MKE) | $319 | $295 | ±7% |
+| 1 | Cleveland, OH (CLE) | $278 | $227 | ±23% |
+| 2 | Minneapolis, MN (MSP) | $288 | $227 | ±25% |
+| 3 | St. Louis, MO (STL) | $293 | $227 | ±30% |
+| 4 | Milwaukee, WI (MKE) | $319 | $295 | ±9% |
 | 5 | Los Angeles, CA (LAX) | $337 | $307 | ±19% |
 | 6 | Atlanta, GA (ATL) | $343 | $270 | ±11% |
-| 7 | Louisville, KY (SDF) | $343 | $316 | ±9% |
-| 8 | Detroit, MI (DTW) | $346 | $316 | ±11% |
+| 7 | Louisville, KY (SDF) | $343 | $316 | ±14% |
+| 8 | Detroit, MI (DTW) | $346 | $316 | ±14% |
 | 9 | Fort Lauderdale, FL (FLL) | $359 | $315 | ±8% |
 | 10 | Denver, CO (DEN) | $370 | $272 | ±18% |
 | 11 | Nashville, TN (BNA) | $374 | $326 | ±11% |
-| 12 | Omaha, NE (OMA) | $374 | $326 | ±15% |
-| 13 | Des Moines, IA (DSM) | $378 | $326 | ±13% |
+| 12 | Omaha, NE (OMA) | $374 | $326 | ±14% |
+| 13 | Des Moines, IA (DSM) | $378 | $326 | ±15% |
 | 14 | Washington Dulles, VA (IAD) | $380 | $283 | ±13% |
-| 15 | Indianapolis, IN (IND) | $385 | $364 | ±7% |
+| 15 | Indianapolis, IN (IND) | $385 | $364 | ±10% |
 
 ## 🎢 Biggest price swings (worth waiting for a dip)
 
 | Destination | Typical | Low | Swing |
 |---|---|---|---|
-| St. Louis, MO (STL) | $293 | $227 | ±31% |
-| Cleveland, OH (CLE) | $278 | $227 | ±24% |
-| Minneapolis, MN (MSP) | $288 | $227 | ±24% |
-| Washington National, VA (DCA) | $418 | $283 | ±22% |
-| Baltimore, MD (BWI) | $418 | $283 | ±20% |
+| St. Louis, MO (STL) | $293 | $227 | ±30% |
+| Washington National, VA (DCA) | $418 | $283 | ±26% |
+| Minneapolis, MN (MSP) | $288 | $227 | ±25% |
+| Cleveland, OH (CLE) | $278 | $227 | ±23% |
+| Baltimore, MD (BWI) | $418 | $283 | ±22% |
+| Dallas, TX (DFW) | $435 | $298 | ±21% |
 | Los Angeles, CA (LAX) | $337 | $307 | ±19% |
-| Dallas, TX (DFW) | $434 | $298 | ±19% |
 | Philadelphia, PA (PHL) | $413 | $272 | ±19% |
 | Denver, CO (DEN) | $370 | $272 | ±18% |
 | San Diego, CA (SAN) | $445 | $337 | ±18% |
@@ -91,15 +82,15 @@ _Each fare compared with that city's typical price, then averaged across all cit
 
 | Weekend | vs. typical |
 |---|---|
-| Dec 10–13 | -11% |
-| Jan 7–10 | -11% |
-| Dec 3–6 | -10% |
-| Dec 17–20 | -8% |
-| Dec 24–27 | -1% |
-| Dec 31–Jan 3 | +0% |
+| Jan 7–10 | -1% |
+| Dec 3–6 | +0% |
+| Dec 10–13 | +1% |
+| Jan 14–17 | +1% |
+| Dec 17–20 | +2% |
+| Dec 24–27 | +3% |
+| Dec 31–Jan 3 | +5% |
 | Nov 19–22 | +20% |
 | Nov 12–15 | +24% |
-| Nov 26–29 | +27% |
-| Nov 5–8 | +31% |
+| Nov 26–29 | +24% |
 
 _Raw data: `data/prices-YYYY-MM.csv` — one row per destination × departure day × weekend × run._

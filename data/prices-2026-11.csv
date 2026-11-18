@@ -47041,3 +47041,163 @@ run_id,checked_at_local,dest,city,state,tier,weekend,depart_date,depart_day,retu
 2026-11-18T00:43Z,2026-11-17 18:43,CRW,Charleston,WV,state,2027-01-14,2027-01-15,Fri,2027-01-17,ok,419,419,0,Fri 14:35→17:27,2,
 2026-11-18T00:43Z,2026-11-17 18:43,CRW,Charleston,WV,state,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,'NoneType' object is not subscriptable
 2026-11-18T00:43Z,2026-11-17 18:43,CRW,Charleston,WV,state,2027-01-21,2027-01-22,Fri,2027-01-24,ok,419,419,0,Fri 14:35→17:27,2,
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DEN,Denver,CO,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAD,Washington Dulles,VA,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,IAH,Houston,TX,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LAX,Los Angeles,CA,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,EWR,Newark / New York,NJ,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,LGA,New York LaGuardia,NY,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,SFO,San Francisco,CA,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-11-19,2026-11-19,Thu,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-11-19,2026-11-20,Fri,2026-11-22,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-11-26,2026-11-26,Thu,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-11-26,2026-11-27,Fri,2026-11-29,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-03,2026-12-03,Thu,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-03,2026-12-04,Fri,2026-12-06,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-10,2026-12-10,Thu,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-10,2026-12-11,Fri,2026-12-13,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-17,2026-12-17,Thu,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-17,2026-12-18,Fri,2026-12-20,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-24,2026-12-24,Thu,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-24,2026-12-25,Fri,2026-12-27,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-31,2026-12-31,Thu,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2026-12-31,2027-01-01,Fri,2027-01-03,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-07,2027-01-07,Thu,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-07,2027-01-08,Fri,2027-01-10,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-14,2027-01-14,Thu,2027-01-17,error,,,,,0,'NoneType' object has no attribute 'text'
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-14,2027-01-15,Fri,2027-01-17,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-21,2027-01-21,Thu,2027-01-24,error,,,,,0,no flights found; received error
+2026-11-18T13:43Z,2026-11-18 07:43,DCA,Washington National,VA,top,2027-01-21,2027-01-22,Fri,2027-01-24,error,,,,,0,no flights found; received error

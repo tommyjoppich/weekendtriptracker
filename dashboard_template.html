@@ -105,6 +105,8 @@ footer{color:var(--ink-3);font-size:12px;margin-top:24px}
     <p id="sub"></p>
   </header>
 
+  <div id="banner" hidden style="margin:16px 0 0;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);font-size:13px"></div>
+
   <div class="chips" id="chips" role="group" aria-label="Weekend"></div>
 
   <div class="stats" id="stats"></div>
@@ -180,8 +182,22 @@ function moveTip(e){
 function hideTip(){ tip.style.opacity = 0; }
 
 /* ---------- header + chips ---------- */
+/* "(checked Nov 17 18:43)" when a price comes from an earlier check than the latest */
+function asOf(d, w){
+  const t = d.grid && d.grid[w] && d.grid[w].t;
+  return t && t !== DATA.updated ? ` <span style='opacity:.7'>(checked ${esc(t.slice(5))})</span>` : "";
+}
 function renderHeader(){
   $("#sub").textContent = `United · regular Economy · ${DATA.trip} · updated ${DATA.updated} (Chicago)`;
+  const bn = $("#banner");
+  if (DATA.blocked){
+    bn.hidden = false;
+    bn.innerHTML = `<b style="color:var(--ink)">⚠ Google blocked most of the latest check</b> (${DATA.errors} of ${DATA.searches} searches failed, ${DATA.updated}). ` +
+      (DATA.prices_from ? `Showing each city's most recent good price instead${DATA.last_good ? ` — last full check ${esc(DATA.last_good)}` : ""}. Hover a price to see when it was checked.` : "No recent prices to show yet.");
+  } else if (DATA.searches && DATA.errors / DATA.searches > 0.2){
+    bn.hidden = false;
+    bn.innerHTML = `${DATA.errors} of ${DATA.searches} searches failed in the latest check (Google throttling). Missing prices are filled from earlier checks.`;
+  } else bn.hidden = true;
   $("#thr").textContent = Math.round(DATA.deal_threshold * 100) + "%";
   const chips = $("#chips");
   const opts = [["any","Any weekend"], ...DATA.weekends.map(d => [d, wk(d)])];
@@ -241,7 +257,7 @@ function renderMap(){
       el.innerHTML = `<b>${st}</b><span>${money(list[0].x.p)}</span>`;
       el.tabIndex = 0;
       el.setAttribute("aria-label", `${st}: cheapest ${money(list[0].x.p)}`);
-      const html = `<b>${st}</b><br>` + list.map(({d,x}) => `${esc(d.city)} (${d.code}) — <b>${money(x.p)}</b> · ${wk(x.w)} · ${esc((x.f||"").slice(0,3))}${x.s===0?" · nonstop":""}`).join("<br>");
+      const html = `<b>${st}</b><br>` + list.map(({d,x}) => `${esc(d.city)} (${d.code}) — <b>${money(x.p)}</b> · ${wk(x.w)} · ${esc((x.f||"").slice(0,3))}${x.s===0?" · nonstop":""}${asOf(d, x.w)}`).join("<br>");
       el.onmouseenter = e => showTip(e, html); el.onmousemove = moveTip; el.onmouseleave = hideTip;
       el.onclick = () => { stateFilter = stateFilter === st ? null : st; renderAll(); };
       el.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); el.click(); } };
@@ -346,7 +362,7 @@ function renderHeat(){
       const t = Math.min(Math.abs(rel) / 0.35, 1);
       const bg = mix(mid, rel < 0 ? cool : warm, t);
       const ink = t > 0.55 ? "#fff" : css("--ink");
-      html += `<div class="c" style="background:${bg};color:${ink}" data-tip="${esc(d.city)} · ${wk(w)}<br><b>${money(g.p)}</b> · leave ${esc(g.f||"")}${g.s===0?" · nonstop":""}${d.typ_wk?`<br>${pctTxt(rel)} vs typical ${money(d.typ_wk)}`:""}">${money(g.p)}</div>`;
+      html += `<div class="c" style="background:${bg};color:${ink}" data-tip="${esc(d.city)} · ${wk(w)}<br><b>${money(g.p)}</b> · leave ${esc(g.f||"")}${g.s===0?" · nonstop":""}${d.typ_wk?`<br>${pctTxt(rel)} vs typical ${money(d.typ_wk)}`:""}${asOf(d, w)}">${money(g.p)}</div>`;
     }
   }
   heat.innerHTML = html;

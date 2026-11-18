@@ -83,8 +83,18 @@ def summarize(df: pd.DataFrame) -> dict:
     ok = (df[df["status"] == "ok"].sort_values("price")
           .drop_duplicates(["run_id", "dest", "weekend"]).copy())
     ok["depart_date"] = ok["weekend"]
-    ok_latest = ok[ok["run_id"] == latest_run]
-    weekends = sorted(latest["weekend"].unique())
+    ok["t"] = pd.to_datetime(ok["checked_at_local"])
+    last_t = pd.to_datetime(latest["checked_at_local"]).max()
+    # upcoming weekends: from the schedule itself, not from whatever the last run managed
+    today = last_t.date()
+    from tracker import upcoming_weekends
+    weekends = [a.isoformat() for a, _, _ in upcoming_weekends(today, config.WEEKENDS_AHEAD)]
+    # "now" = each city's most recent good price per weekend, up to CARRY_HOURS old.
+    # A run that Google blocks then doesn't blank the page.
+    carry = getattr(config, "CARRY_HOURS", 36)
+    ok_latest = (ok[ok["weekend"].isin(weekends) & (ok["t"] >= last_t - pd.Timedelta(hours=carry))]
+                 .sort_values("run_id").groupby(["dest", "weekend"]).tail(1))
+    prices_from = ok_latest["checked_at_local"].min() if not ok_latest.empty else None
 
     per_run_min = ok.groupby(["dest", "run_id"])["price"].min().reset_index()
     typical_all = ok.groupby("dest")["price"].median()   # typical fare for any one weekend
@@ -94,7 +104,8 @@ def summarize(df: pd.DataFrame) -> dict:
     for code, city, state, tier in AIRPORTS:
         series = per_run_min[per_run_min["dest"] == code].sort_values("run_id")["price"]
         now_rows = ok_latest[ok_latest["dest"] == code].sort_values("price")
-        grid = {r.depart_date: (r.price, int(r.stops) if pd.notna(r.stops) else None, r.flight)
+        grid = {r.depart_date: (r.price, int(r.stops) if pd.notna(r.stops) else None, r.flight,
+                                r.checked_at_local)
                 for r in now_rows.itertuples()}
         entry = {"code": code, "city": city, "state": state, "tier": tier,
                  "now": None, "best_wk": None, "now_stops": None, "now_flight": None,
@@ -114,7 +125,7 @@ def summarize(df: pd.DataFrame) -> dict:
                          now_stops=int(r["stops"]), now_flight=r["flight"])
             if entry["typical"]:
                 entry["vs"] = entry["now"] / entry["typical"] - 1
-        entry["grid"] = {d: {"p": int(p), "s": s, "f": f} for d, (p, s, f) in grid.items()}
+        entry["grid"] = {d: {"p": int(p), "s": s, "f": f, "t": t} for d, (p, s, f, t) in grid.items()}
         dests.append(entry)
 
     # deals: latest-run fares well below that destination's own typical fare
@@ -148,6 +159,10 @@ def summarize(df: pd.DataFrame) -> dict:
                   (latest[latest["dest"] == d["code"]]["status"] == "none").any()]
 
     n_err = int((latest["status"] == "error").sum())
+    n_ok = int((latest["status"] == "ok").sum())
+    last_good = next((r for r in reversed(runs)
+                      if (df.loc[df["run_id"] == r, "status"] == "ok").mean() >= 0.5), None)
+    last_good_t = df.loc[df["run_id"] == last_good, "checked_at_local"].iloc[0] if last_good else None
     return {
         "updated": latest["checked_at_local"].iloc[-1],
         "latest_run": latest_run, "n_runs": len(runs),
@@ -156,7 +171,9 @@ def summarize(df: pd.DataFrame) -> dict:
         "dests": dests, "deals": deals,
         "not_served": [d["code"] for d in not_served],
         "deal_threshold": config.DEAL_THRESHOLD, "deal_min_checks": config.DEAL_MIN_CHECKS,
-        "errors": n_err, "searches": int(len(latest)),
+        "errors": n_err, "searches": int(len(latest)), "ok_latest": n_ok,
+        "blocked": bool(len(latest) and n_ok / len(latest) < 0.5),
+        "last_good": last_good_t, "prices_from": prices_from, "carry_hours": carry,
         "trip": trip_text(),
     }
 
@@ -173,9 +190,13 @@ def write_report(s: dict):
         "**📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).",
         "",
     ]
-    if s["searches"] and s["errors"] / s["searches"] > 0.2:
+    if s["blocked"]:
+        lines += [f"> ⚠️ Google blocked most of the latest check ({s['errors']} of {s['searches']} searches "
+                  f"failed). Prices below are the most recent good ones"
+                  f"{' (last full check ' + s['last_good'] + ')' if s['last_good'] else ''}.", ""]
+    elif s["searches"] and s["errors"] / s["searches"] > 0.2:
         lines += [f"> ⚠️ {s['errors']} of {s['searches']} searches failed this run — "
-                  "Google may be throttling the bot. Occasional bad runs are normal.", ""]
+                  "Google may be throttling the bot. Missing prices are filled from the previous check.", ""]
 
     if s["n_runs"] < config.DEAL_MIN_CHECKS:
         lines += [f"> ⏳ Run {s['n_runs']} of the first {config.DEAL_MIN_CHECKS}: \"typical price\", "

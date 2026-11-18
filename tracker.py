@@ -24,6 +24,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import config
+import safe_parse  # noqa: F401  (skip incomplete Google listings instead of crashing)
 from airports import AIRPORTS
 
 ROOT = Path(__file__).parent
@@ -80,7 +81,8 @@ def fetch(dest, out, lo, hi, back):
     try:
         return get_flights(q)
     except Exception:
-        time.sleep(8)                 # one retry after a short pause
+        # Google often answers a busy bot with "no flights found"; wait and retry once
+        time.sleep(random.uniform(15, 25))
         return get_flights(q)
 
 
@@ -152,8 +154,10 @@ def run(fetcher=fetch, now: datetime | None = None, sleep=time.sleep,
                         print(f"{streak} failures in a row — Google is probably blocking; stopping early.",
                               file=sys.stderr)
                         return ok
-                    if streak == 15:
-                        sleep(90)                    # long pause, then keep trying
+                    if streak in (10, 20, 30):
+                        print(f"{streak} failures in a row — pausing 3 minutes to let Google cool off",
+                              flush=True)
+                        sleep(180)                   # long pause, then keep trying
                     sleep(random.uniform(*config.DELAY_RANGE))
             fh.flush()
             print(f"{code}: done", flush=True)

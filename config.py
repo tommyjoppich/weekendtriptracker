@@ -26,7 +26,10 @@ CURRENCY = "USD"
 TIMEZONE = "America/Chicago"
 
 # Pause between searches so Google doesn't block the bot (seconds, random range)
-DELAY_RANGE = (1.0, 2.5)
+DELAY_RANGE = (2.0, 4.0)
+
+# If a run gets blocked, keep showing each city's last good price for this long
+CARRY_HOURS = 36
 
 # A "deal" = a fare at least this far below that destination's own typical price
 DEAL_THRESHOLD = 0.20        # 20% below typical

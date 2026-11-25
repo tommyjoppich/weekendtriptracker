@@ -1,47 +1,49 @@
 # 🗺️ United weekend trips from Chicago (ORD)
 
 Leave Thu after 6 PM or Fri before 6 PM · back Sun by 10 PM · United only · regular Economy · next 10 weekends
-_Updated 2026-11-24 18:43 Chicago time · run 99 · 1400 searches this run_
+_Updated 2026-11-25 07:43 Chicago time · run 100 · 860 searches this run_
 
 **📍 Interactive map:** see `docs/index.html` (link in README once GitHub Pages is on).
+
+> ⚠️ Google blocked most of the latest check (619 of 860 searches failed). Prices below are the most recent good ones (last full check 2026-11-24 18:43).
 
 ## 🔥 Deals right now
 
 | Destination | Weekend | Price | Typical | Off | Flight |
 |---|---|---|---|---|---|
-| Seattle, WA (SEA) | Jan 28–31 | **$377** | $552 | 32% | Fri 09:00→11:47 nonstop (+3 more weekends) |
-| San Diego, CA (SAN) | Jan 28–31 | **$357** | $507 | 30% | Thu 19:55→22:37 nonstop (+4 more weekends) |
-| Manchester, NH (MHT) | Jan 7–10 | **$512** | $705 | 27% | Fri 06:00→14:01 1 stop (+2 more weekends) |
+| Seattle, WA (SEA) | Jan 14–17 | **$377** | $552 | 32% | Fri 09:00→11:47 nonstop (+1 more weekend) |
+| San Diego, CA (SAN) | Jan 7–10 | **$357** | $507 | 30% | Thu 19:55→22:37 nonstop (+2 more weekends) |
+| Manchester, NH (MHT) | Jan 21–24 | **$512** | $705 | 27% | Fri 06:00→14:01 1 stop (+2 more weekends) |
 | Fort Lauderdale, FL (FLL) | Jan 7–10 | **$337** | $457 | 26% | Thu 18:10→22:28 nonstop |
-| Palm Springs, CA (PSP) | Dec 17–20 | **$449** | $599 | 25% | Thu 20:13→22:55 nonstop (+1 more weekend) |
+| Palm Springs, CA (PSP) | Dec 24–27 | **$449** | $599 | 25% | Thu 20:13→22:55 nonstop (+1 more weekend) |
 | Birmingham, AL (BHM) | Jan 7–10 | **$437** | $580 | 25% | Thu 21:30→23:45 nonstop (+3 more weekends) |
-| St. Louis, MO (STL) | Jan 7–10 | **$302** | $397 | 24% | Thu 20:10→21:37 nonstop (+3 more weekends) |
+| St. Louis, MO (STL) | Jan 14–17 | **$302** | $397 | 24% | Thu 20:10→21:37 nonstop (+3 more weekends) |
 | Bozeman, MT (BZN) | Jan 7–10 | **$488** | $639 | 24% | Fri 10:47→15:32 1 stop |
-| Orange County, CA (SNA) | Dec 17–20 | **$459** | $589 | 22% | Thu 19:45→22:27 nonstop (+4 more weekends) |
+| Orange County, CA (SNA) | Jan 7–10 | **$459** | $588 | 22% | Thu 19:53→22:30 nonstop (+4 more weekends) |
 | New Orleans, LA (MSY) | Jan 14–17 | **$478** | $611 | 22% | Fri 16:45→19:18 nonstop (+2 more weekends) |
-| Minneapolis, MN (MSP) | Dec 17–20 | **$302** | $386 | 22% | Thu 19:55→21:38 nonstop (+3 more weekends) |
+| Minneapolis, MN (MSP) | Jan 28–31 | **$302** | $386 | 22% | Thu 18:10→19:53 nonstop (+3 more weekends) |
 
 ## 💸 Cheapest right now
 
 | # | Destination | Price | Best weekend | Leave | Stops | vs. typical |
 |---|---|---|---|---|---|---|
-| 1 | Minneapolis, MN (MSP) | **$302** | Dec 17–20 | Thu 19:55 | nonstop | -8% |
-| 2 | Cleveland, OH (CLE) | **$302** | Dec 17–20 | Thu 18:20 | nonstop | -6% |
-| 3 | St. Louis, MO (STL) | **$302** | Jan 7–10 | Thu 20:10 | nonstop | -10% |
+| 1 | Minneapolis, MN (MSP) | **$302** | Jan 28–31 | Thu 18:10 | nonstop | -8% |
+| 2 | Cleveland, OH (CLE) | **$302** | Jan 7–10 | Thu 18:10 | nonstop | -6% |
+| 3 | St. Louis, MO (STL) | **$302** | Jan 21–24 | Thu 20:10 | nonstop | -10% |
 | 4 | Fort Lauderdale, FL (FLL) | **$337** | Jan 7–10 | Thu 18:10 | nonstop | -6% |
 | 5 | Boston, MA (BOS) | **$347** | Dec 17–20 | Fri 06:50 | nonstop | -10% |
-| 6 | San Diego, CA (SAN) | **$357** | Jan 28–31 | Thu 19:55 | nonstop | -22% |
-| 7 | Detroit, MI (DTW) | **$362** | Dec 17–20 | Thu 19:45 | nonstop | -4% |
+| 6 | San Diego, CA (SAN) | **$357** | Jan 7–10 | Thu 19:55 | nonstop | -22% |
+| 7 | Detroit, MI (DTW) | **$362** | Jan 7–10 | Thu 19:55 | nonstop | -4% |
 | 8 | Louisville, KY (SDF) | **$362** | Dec 17–20 | Thu 18:10 | nonstop | -2% |
-| 9 | Milwaukee, WI (MKE) | **$364** | Dec 17–20 | Thu 19:45 | nonstop | +9% |
+| 9 | Milwaukee, WI (MKE) | **$364** | Jan 7–10 | Thu 19:48 | nonstop | +9% |
 | 10 | Seattle, WA (SEA) | **$377** | Jan 28–31 | Fri 09:00 | nonstop | -5% |
 | 11 | Atlanta, GA (ATL) | **$377** | Jan 21–24 | Fri 06:50 | nonstop | +8% |
-| 12 | Omaha, NE (OMA) | **$382** | Jan 28–31 | Thu 19:50 | nonstop | -6% |
-| 13 | Washington Dulles, VA (IAD) | **$383** | Jan 28–31 | Thu 21:30 | 1 | +0% |
+| 12 | Omaha, NE (OMA) | **$382** | Jan 7–10 | Thu 19:50 | nonstop | -6% |
+| 13 | Washington Dulles, VA (IAD) | **$383** | Jan 21–24 | Thu 21:30 | 1 | +0% |
 | 14 | Kansas City, MO (MCI) | **$402** | Jan 21–24 | Thu 19:55 | nonstop | -0% |
-| 15 | Des Moines, IA (DSM) | **$402** | Jan 14–17 | Thu 18:27 | nonstop | +1% |
-| 16 | Wichita, KS (ICT) | **$417** | Dec 17–20 | Thu 21:43 | nonstop | -2% |
-| 17 | Charleston, WV (CRW) | **$419** | Jan 7–10 | Fri 14:35 | nonstop | +5% |
+| 15 | Des Moines, IA (DSM) | **$402** | Jan 28–31 | Thu 18:27 | nonstop | +1% |
+| 16 | Wichita, KS (ICT) | **$417** | Jan 28–31 | Thu 21:20 | nonstop | -2% |
+| 17 | Charleston, WV (CRW) | **$419** | Jan 28–31 | Fri 14:35 | nonstop | +5% |
 | 18 | Indianapolis, IN (IND) | **$422** | Dec 17–20 | Thu 19:45 | nonstop | +4% |
 | 19 | Denver, CO (DEN) | **$423** | Jan 28–31 | Thu 20:20 | nonstop | +11% |
 | 20 | Philadelphia, PA (PHL) | **$437** | Jan 28–31 | Thu 18:25 | nonstop | +2% |
@@ -55,7 +57,7 @@ _Updated 2026-11-24 18:43 Chicago time · run 99 · 1400 searches this run_
 | 3 | St. Louis, MO (STL) | $335 | $227 | ±19% |
 | 4 | Milwaukee, WI (MKE) | $335 | $295 | ±10% |
 | 5 | Atlanta, GA (ATL) | $349 | $270 | ±10% |
-| 6 | Fort Lauderdale, FL (FLL) | $358 | $315 | ±7% |
+| 6 | Fort Lauderdale, FL (FLL) | $359 | $315 | ±7% |
 | 7 | Louisville, KY (SDF) | $368 | $316 | ±13% |
 | 8 | Detroit, MI (DTW) | $376 | $316 | ±11% |
 | 9 | Denver, CO (DEN) | $380 | $272 | ±12% |
@@ -87,10 +89,10 @@ _Each fare compared with that city's typical price, then averaged across all cit
 
 | Weekend | vs. typical |
 |---|---|
-| Jan 28–31 | -8% |
 | Jan 7–10 | -8% |
 | Jan 21–24 | -8% |
-| Jan 14–17 | -8% |
+| Jan 28–31 | -8% |
+| Jan 14–17 | -7% |
 | Dec 17–20 | -4% |
 | Dec 24–27 | +0% |
 | Dec 31–Jan 3 | +2% |
